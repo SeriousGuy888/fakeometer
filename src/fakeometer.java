@@ -2,7 +2,7 @@ import java.util.*;
 
 public class fakeometer {
 	public static void main(String[] args) {
-		final String VERSION = "1.2.3";
+		final String VERSION = "1.4";
 		
 		Scanner scanner = new Scanner(System.in);
 		Random rand = new Random();
@@ -12,7 +12,7 @@ public class fakeometer {
 		
 		System.out.println("\nFakeometer v" + VERSION +"\n\nCALCULATING...");
 		
-		int fakeness = rand.nextInt(100);
+		double fakeness = (double) rand.nextInt(1000) / 10;
 		
 		System.out.println(object + " [is/are/was/were] " + fakeness + "% fake.");
 	}
