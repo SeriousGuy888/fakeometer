@@ -9,8 +9,9 @@
  
  
  # How to Use
- Download one of the jar files,
- navigate to the dir on your computer
- run the followig command: java -jar FILENAME
- 
- i dont know how to format markdown
+If you are using a version whose version number is 1.4.x or below, 
+download the jar file and run the following command in your command prompt or terminal.
+`java -jar FILENAME`
+
+If you are using a version whose version number is 1.5.x or aboce,
+download the jar file and double click on it.
