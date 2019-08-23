@@ -1,19 +1,23 @@
 import java.util.*;
 
-public class fakeometer {
+import javax.swing.*;
+
+public class Fakeometer extends JFrame {
+	private static final long serialVersionUID = 1678250086550409328L;
+
+	final static String VERSION = "1.5.0";
+	
+	static Scanner scanner = new Scanner(System.in);
+	static Random rand = new Random();
+	
+	static String inputMessage = "Input something you want to get the fakeness of...";
+	
 	public static void main(String[] args) {
-		final String VERSION = "1.4";
-		
-		Scanner scanner = new Scanner(System.in);
-		Random rand = new Random();
-		
-		System.out.println("\nInput object to calculate the fakeness of:");
-		String object = scanner.nextLine();
-		
-		System.out.println("\nFakeometer v" + VERSION +"\n\nCALCULATING...");
-		
-		double fakeness = (double) rand.nextInt(1000) / 10;
-		
-		System.out.println(object + " [is/are/was/were] " + fakeness + "% fake.");
+		GUI.main();
+	}
+	
+	public static double calc() {
+		double fakeness = ((double) rand.nextInt(1010) / 10) - 1;
+		return fakeness;
 	}
 }
